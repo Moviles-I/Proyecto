@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TicoReporte</string>
+    <string name="subtitle_reports">Community reports</string>
+    <string name="label_category">Category</string>
+    <string name="status_pending">Pending</string>
+    <string name="status_processed">Processed</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_save">Save</string>
+    <string name="hint_search_report">Search report...</string>
+    <string name="filter_all_categories">Category: All</string>
+    <string name="filter_all_statuses">Status: All</string>
+    <string name="title_new_report">New Report</string>
+    <string name="label_problem_title">Problem title</string>
+    <string name="hint_problem_title">e.g Pothole on the street...</string>
+    <string name="label_description">Description</string>
+    <string name="hint_description">Describe the problem here...</string>
+    <string name="label_problem_photo">Problem photo</string>
+    <string name="btn_take_photo">Take photo / Gallery</string>
+    <string name="label_location">Location</string>
+    <string name="btn_select_location">Select location</string>
+    <string name="title_location_report">Report Location</string>
+    <string name="hint_search_location">Search address or place...</string>
+    <string name="btn_confirm_location">Confirm Location</string>
+    <string name="title_report_detail">Report Detail</string>
+    <string name="label_lat">Lat:</string>
+    <string name="label_lon">Lon:</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_delete">Delete</string>
+</resources>
