@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">TicoReporte</string>
+    <string name="subtitle_reports">Reportes comunales</string>
+    <string name="label_category">Categoría</string>
+    <string name="status_pending">Pendiente</string>
+    <string name="status_processed">Tramitado</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_save">Guardar</string>
+    <string name="hint_search_report">Buscar reporte...</string>
+    <string name="filter_all_categories">Categoría: Todas</string>
+    <string name="filter_all_statuses">Estado: Todos</string>
+    <string name="title_new_report">Nuevo Reporte</string>
+    <string name="label_problem_title">Título del problema</string>
+    <string name="hint_problem_title">Ej. Hueco en la calle...</string>
+    <string name="label_description">Descripción</string>
+    <string name="hint_description">Describa el problema aquí...</string>
+    <string name="label_problem_photo">Foto del problema</string>
+    <string name="btn_take_photo">Tomar foto/ Galería</string>
+    <string name="label_location">Ubicación</string>
+    <string name="btn_select_location">Seleccione la ubicación</string>
+    <string name="title_location_report">Ubicación del Reporte</string>
+    <string name="hint_search_location">Busca dirección o lugar...</string>
+    <string name="btn_confirm_location">Confirmar Ubicación</string>
+    <string name="title_report_detail">Detalle de Reporte</string>
+    <string name="label_lat">Lat:</string>
+    <string name="label_lon">Lon:</string>
+    <string name="btn_edit">Editar</string>
+    <string name="btn_delete">Eliminar</string>
 </resources>
