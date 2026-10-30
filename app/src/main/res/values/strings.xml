@@ -26,4 +26,11 @@
     <string name="label_lon">Lon:</string>
     <string name="btn_edit">Editar</string>
     <string name="btn_delete">Eliminar</string>
+    <string name="btn_zoom_in">+</string>
+    <string name="btn_zoom_out">-</string>
+    <string name="sample_report_title">Bache profundo en la calle principal...</string>
+    <string name="sample_category_date">Categoría: Vialidad 12/08/26</string>
+    <string name="sample_report_description">Se encuentra un bache de gran tamaño y profundidad en la calle principal, afectando el tránsito y dañando los vehículos que transitan en la zona. Es de difícil paso para los automóviles</string>
+    <string name="sample_latitude">10.57627</string>
+    <string name="sample_longitude">10.647629</string>
 </resources>
