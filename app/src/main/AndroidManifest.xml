@@ -22,6 +22,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".LocationActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ReportDetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
             android:name=".NewReportActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />

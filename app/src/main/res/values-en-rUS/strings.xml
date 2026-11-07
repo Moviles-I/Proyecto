@@ -28,4 +28,11 @@
     <string name="label_lon">Lon:</string>
     <string name="btn_edit">Edit</string>
     <string name="btn_delete">Delete</string>
+    <string name="btn_zoom_in">+</string>
+    <string name="btn_zoom_out">-</string>
+    <string name="sample_report_title">Deep pothole on the main street...</string>
+    <string name="sample_category_date">Category: Roads 12/08/26</string>
+    <string name="sample_report_description">There is a large and deep pothole on the main street, affecting traffic and damaging the vehicles that pass through the area. It is hard for cars to get through</string>
+    <string name="sample_latitude">10.57627</string>
+    <string name="sample_longitude">10.647629</string>
 </resources>

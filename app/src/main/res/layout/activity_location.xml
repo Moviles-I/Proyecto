@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity">
+
+    <View
+        android:id="@+id/viewHeader_Location"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@color/green_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnBack_Location"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back" />
+
+    <ImageButton
+        android:id="@+id/btnMenu_Location"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <TextView
+        android:id="@+id/tvAppName_Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle_Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/title_location_report"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppName_Location" />
+
+    <EditText
+        android:id="@+id/txtSearch_Location"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:hint="@string/hint_search_location"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btnSearch_Location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle_Location" />
+
+    <ImageButton
+        android:id="@+id/btnSearch_Location"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/gray_search_button"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSearch_Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtSearch_Location"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <View
+        android:id="@+id/viewBottomBar_Location"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/viewMap_Location"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/gray_map"
+        app:layout_constraintBottom_toTopOf="@+id/viewBottomBar_Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHeader_Location" />
+
+    <ImageView
+        android:id="@+id/imgMyLocation_Location"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMap_Location"
+        app:layout_constraintEnd_toEndOf="@+id/viewMap_Location"
+        app:srcCompat="@drawable/ic_my_location" />
+
+    <Button
+        android:id="@+id/btnConfirm_Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_button"
+        android:text="@string/btn_confirm_location"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBottomBar_Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewBottomBar_Location" />
+
+    <Button
+        android:id="@+id/btnZoomOut_Location"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="@color/light_blue_button"
+        android:padding="0dp"
+        android:text="@string/btn_zoom_out"
+        android:textColor="@color/teal_button"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBottomBar_Location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewBottomBar_Location" />
+
+    <Button
+        android:id="@+id/btnZoomIn_Location"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/light_blue_button"
+        android:padding="0dp"
+        android:text="@string/btn_zoom_in"
+        android:textColor="@color/teal_button"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBottomBar_Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewBottomBar_Location" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
