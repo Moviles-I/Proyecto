@@ -9,7 +9,7 @@ import com.example.myapplication.domain.model.Report
 import com.example.myapplication.domain.model.Status
 import com.example.myapplication.domain.repository.ReportRepository
 
-// Pantalla 1: lista principal con busqueda y filtros
+// Screen 1: main list with search and filters
 class ReportListViewModel : ViewModel() {
 
     private val repository: ReportRepository = MemoryDataRepository()
@@ -30,13 +30,13 @@ class ReportListViewModel : ViewModel() {
         applyFilters()
     }
 
-    // null significa "Todas"
+    // null means "All"
     fun setCategory(category: Category?) {
         categoryFilter = category
         applyFilters()
     }
 
-    // null significa "Todos"
+    // null means "All"
     fun setStatus(status: Status?) {
         statusFilter = status
         applyFilters()
@@ -56,5 +56,19 @@ class ReportListViewModel : ViewModel() {
         }
 
         _reports.value = list
+    }
+
+    fun getReports(query: String): List<Report> {
+        var list = repository.getReports().toList()
+        if (query.isNotEmpty()) {
+            list = list.filter { it.title.contains(query, ignoreCase = true) }
+        }
+        if (categoryFilter != null) {
+            list = list.filter { it.category == categoryFilter }
+        }
+        if (statusFilter != null) {
+            list = list.filter { it.status == statusFilter }
+        }
+        return list
     }
 }

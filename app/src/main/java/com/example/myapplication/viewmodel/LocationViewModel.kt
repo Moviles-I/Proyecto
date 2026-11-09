@@ -3,7 +3,7 @@ package com.example.myapplication.viewmodel
 import androidx.lifecycle.ViewModel
 import com.example.myapplication.util.Utils
 
-// Pantalla 3: ubicacion que el usuario elige en el mapa
+// Screen 3: location chosen by the user on the map
 class LocationViewModel : ViewModel() {
 
     var latitude: Double = Utils.DEFAULT_LATITUDE

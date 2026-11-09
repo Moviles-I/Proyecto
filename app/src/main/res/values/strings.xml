@@ -34,4 +34,15 @@
     <string name="sample_report_description">Se encuentra un bache de gran tamaño y profundidad en la calle principal, afectando el tránsito y dañando los vehículos que transitan en la zona. Es de difícil paso para los automóviles</string>
     <string name="sample_latitude">10.57627</string>
     <string name="sample_longitude">10.647629</string>
+    <string name="dialog_title_update">Confirmar actualización</string>
+    <string name="dialog_msg_update">¿Desea actualizar este reporte?</string>
+    <string name="dialog_title_delete">Confirmar eliminación</string>
+    <string name="dialog_msg_delete">¿Desea eliminar este reporte?</string>
+    <string name="btn_yes">Sí</string>
+    <string name="btn_no">No</string>
+    <string name="msg_saved_success">Datos guardados exitosamente</string>
+    <string name="msg_updated_success">Datos actualizados exitosamente</string>
+    <string name="msg_deleted_success">Datos eliminados exitosamente</string>
+    <string name="msg_incomplete_data">Datos incompletos</string>
+    <string name="msg_data_not_found">No se encontró la información</string>
 </resources>

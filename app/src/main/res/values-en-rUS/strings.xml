@@ -35,4 +35,15 @@
     <string name="sample_report_description">There is a large and deep pothole on the main street, affecting traffic and damaging the vehicles that pass through the area. It is hard for cars to get through</string>
     <string name="sample_latitude">10.57627</string>
     <string name="sample_longitude">10.647629</string>
+    <string name="dialog_title_update">Confirm Update</string>
+    <string name="dialog_msg_update">Do you want to update this report?</string>
+    <string name="dialog_title_delete">Confirm Delete</string>
+    <string name="dialog_msg_delete">Do you want to delete this report?</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="msg_saved_success">Data saved successfully</string>
+    <string name="msg_updated_success">Data updated successfully</string>
+    <string name="msg_deleted_success">Data deleted successfully</string>
+    <string name="msg_incomplete_data">Incomplete data</string>
+    <string name="msg_data_not_found">Data not found</string>
 </resources>
