@@ -7,7 +7,7 @@ import com.example.myapplication.data.memory.MemoryDataRepository
 import com.example.myapplication.domain.model.Report
 import com.example.myapplication.domain.repository.ReportRepository
 
-// Pantalla 4: detalle de un reporte
+// Screen 4: report detail
 class ReportDetailViewModel : ViewModel() {
 
     private val repository: ReportRepository = MemoryDataRepository()
