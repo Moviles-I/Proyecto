@@ -53,13 +53,6 @@
     <string name="msg_confirm_update">¿Desea actualizar este reporte?</string>
     <string name="title_dialog_delete">Eliminar reporte</string>
     <string name="msg_confirm_delete">¿Desea eliminar este reporte?</string>
-    <string name="btn_yes">Sí</string>
-    <string name="btn_no">No</string>
-    <string name="msg_report_saved">Reporte guardado correctamente</string>
-    <string name="msg_report_updated">Reporte actualizado correctamente</string>
-    <string name="msg_report_deleted">Reporte eliminado correctamente</string>
-    <string name="msg_report_not_found">No se encontró un reporte con ese ID</string>
     <string name="msg_id_required">Digite el ID del reporte</string>
-    <string name="msg_fill_fields">Complete todos los campos</string>
     <string name="msg_invalid_category">Categoría no válida</string>
 </resources>
