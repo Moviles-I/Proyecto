@@ -85,13 +85,10 @@
                 android:layout_height="wrap_content"
                 android:text="@string/label_category" />
 
-            <EditText
-                android:id="@+id/txtCategory_Report"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/hint_category"
-                android:inputType="text" />
+            <Spinner
+                android:id="@+id/spCategory_Report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
         </TableRow>
 
         <TableRow
@@ -130,33 +127,4 @@
 
     </TableLayout>
 
-    <Button
-        android:id="@+id/btnSave_Report"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="@string/btn_save"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
-
-    <Button
-        android:id="@+id/btnRemove_Report"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/btn_delete"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSave_Report" />
-
-    <Button
-        android:id="@+id/btnCancel_Report"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/btn_cancel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRemove_Report" />
 </androidx.constraintlayout.widget.ConstraintLayout>

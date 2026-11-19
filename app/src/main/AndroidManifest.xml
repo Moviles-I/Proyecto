@@ -39,7 +39,8 @@
         </activity>
         <activity
             android:name=".ReportActivity"
-            android:exported="false"
+            android:exported="true"
+            android:theme="@style/Theme.MyApplication.WithActionBar"
             android:windowSoftInputMode="adjustResize" />
     </application>
 

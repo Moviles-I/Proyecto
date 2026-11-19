@@ -55,4 +55,8 @@
     <string name="msg_confirm_delete">¿Desea eliminar este reporte?</string>
     <string name="msg_id_required">Digite el ID del reporte</string>
     <string name="msg_invalid_category">Categoría no válida</string>
+    <string name="title_dialog_question">Pregunta</string>
+    <string name="msg_location_confirmed">Ubicación confirmada</string>
+    <string name="menu_reports">Reportes</string>
+    <string name="menu_manage_reports">Gestionar reportes</string>
 </resources>

@@ -1,5 +1,7 @@
 package com.example.myapplication
 
+import android.widget.ImageButton
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -33,6 +35,16 @@ class NewReportActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val btnBack = findViewById<ImageButton>(R.id.btnBack)
+        val btnMenu = findViewById<ImageButton>(R.id.btnMenu)
+
+        btnBack.setOnClickListener {
+            finish()
+        }
+
+        btnMenu.setOnClickListener { view ->
+            Utils.showMainMenu(this, view)
+        }
 
         reportFormViewModel = ReportFormViewModel()
 
@@ -43,6 +55,12 @@ class NewReportActivity : AppCompatActivity() {
 
         val btnSave = findViewById<Button>(R.id.btnSave)
         val btnCancel = findViewById<Button>(R.id.btnCancel)
+        val btnSelectLocation = findViewById<Button>(R.id.btnSelectLocation)
+
+        btnSelectLocation.setOnClickListener {
+            val intent = Intent(this, LocationActivity::class.java)
+            startActivity(intent)
+        }
 
         val reportId = intent.getIntExtra(Utils.EXTRA_REPORT_ID, -1)
         if (reportId != -1) {
