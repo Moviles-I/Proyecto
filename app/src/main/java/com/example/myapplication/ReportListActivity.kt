@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.widget.ImageButton
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
@@ -36,6 +37,11 @@ class ReportListActivity : AppCompatActivity(), OnItemClickListener {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val btnMenu = findViewById<ImageButton>(R.id.btnMenu)
+
+        btnMenu.setOnClickListener { view ->
+            Utils.showMainMenu(this, view)
         }
 
         reportListViewModel = ReportListViewModel()
@@ -75,7 +81,7 @@ class ReportListActivity : AppCompatActivity(), OnItemClickListener {
     }
 
     override fun onItemClick(report: Report) {
-        val intent = Intent(this, NewReportActivity::class.java).apply {
+        val intent = Intent(this, ReportDetailActivity::class.java).apply {
             putExtra(Utils.EXTRA_REPORT_ID, report.id)
         }
         startActivity(intent)

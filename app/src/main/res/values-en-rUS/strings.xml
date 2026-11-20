@@ -46,4 +46,19 @@
     <string name="msg_deleted_success">Data deleted successfully</string>
     <string name="msg_incomplete_data">Incomplete data</string>
     <string name="msg_data_not_found">Data not found</string>
+    <!-- Report detail CRUD -->
+    <string name="label_report_id">Report ID</string>
+    <string name="hint_report_id">Enter the ID</string>
+    <string name="hint_category">VIALIDAD, ILUMINACION or LIMPIEZA</string>
+    <string name="btn_clear">Clear</string>
+    <string name="title_dialog_update">Update report</string>
+    <string name="msg_confirm_update">Do you want to update this report?</string>
+    <string name="title_dialog_delete">Delete report</string>
+    <string name="msg_confirm_delete">Do you want to delete this report?</string>
+    <string name="msg_id_required">Enter the report ID</string>
+    <string name="msg_invalid_category">Invalid category</string>
+    <string name="title_dialog_question">Question</string>
+    <string name="msg_location_confirmed">Location confirmed</string>
+    <string name="menu_reports">Reports</string>
+    <string name="menu_manage_reports">Manage reports</string>
 </resources>
