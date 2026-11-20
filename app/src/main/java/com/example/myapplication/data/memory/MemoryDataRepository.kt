@@ -5,7 +5,7 @@ import com.example.myapplication.domain.repository.ReportRepository
 
 class MemoryDataRepository : ReportRepository {
 
-    // la lista va en el companion para que todas las pantallas vean los mismos reportes
+    // The list is in companion so all screens see the same reports
     companion object {
         private val memoryList = mutableListOf<Report>()
         private var nextId = 1

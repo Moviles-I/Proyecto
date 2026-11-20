@@ -7,7 +7,7 @@ import com.example.myapplication.domain.model.Report
 import com.example.myapplication.domain.repository.ReportRepository
 import com.example.myapplication.util.Utils
 
-// Pantalla 2: formulario para crear o editar un reporte
+// Screen 2: form to create or edit a report
 class ReportFormViewModel : ViewModel() {
 
     private val repository: ReportRepository = MemoryDataRepository()
@@ -16,7 +16,7 @@ class ReportFormViewModel : ViewModel() {
     var latitude: Double = 0.0
     var longitude: Double = 0.0
 
-    // si es null estamos creando, si no estamos editando
+    // If null we are creating, otherwise we are editing
     var editingReport: Report? = null
 
     fun loadReport(id: Int) {
@@ -59,5 +59,9 @@ class ReportFormViewModel : ViewModel() {
             )
             repository.updateReport(updated)
         }
+    }
+
+    fun deleteReport(id: Int) {
+        repository.deleteReport(id)
     }
 }
